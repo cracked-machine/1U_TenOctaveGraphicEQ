@@ -1,40 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:switches
-LIBS:relays
-LIBS:motors
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:_tc7662b
-LIBS:socket_custom
+EESchema Schematic File Version 4
 LIBS:1U_TenOctaveGraphicEQ_THT-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -49,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L TL072 U_GY1
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY1
 U 1 1 5B7DC9E8
 P 3700 2550
 F 0 "U_GY1" H 3700 2750 50  0000 L CNN
@@ -60,7 +26,7 @@ F 3 "" H 3700 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TL072 U_GY2
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY2
 U 1 1 5B7DC9EF
 P 4800 2550
 F 0 "U_GY2" H 4800 2750 50  0000 L CNN
@@ -79,7 +45,7 @@ V-
 Wire Wire Line
 	3600 2850 3600 2950
 $Comp
-L C C_GY1
+L Device:C C_GY1
 U 1 1 5B7DC9FA
 P 3200 2200
 F 0 "C_GY1" H 3225 2300 50  0000 L CNN
@@ -90,7 +56,7 @@ F 3 "" H 3200 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PREB1
+L Device:C C_PREB1
 U 1 1 5B7DCA01
 P 3200 1700
 F 0 "C_PREB1" H 3225 1800 50  0000 L CNN
@@ -101,7 +67,7 @@ F 3 "" H 3200 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA1
+L Device:R R_GYA1
 U 1 1 5B7DCA08
 P 3650 1950
 F 0 "R_GYA1" V 3730 1950 50  0000 C CNN
@@ -112,7 +78,7 @@ F 3 "" H 3650 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB1
+L Device:R R_GYB1
 U 1 1 5B7DCA0F
 P 3200 3250
 F 0 "R_GYB1" H 3400 3300 50  0000 C CNN
@@ -150,7 +116,7 @@ Wire Wire Line
 Text Label 3200 3600 1    60   ~ 0
 GND
 $Comp
-L POT RV1
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV1
 U 1 1 5B7DCA25
 P 3650 1050
 F 0 "RV1" H 3500 1000 50  0000 C CNN
@@ -173,7 +139,7 @@ V-
 Wire Wire Line
 	4700 2850 4700 2950
 $Comp
-L C C_GY2
+L Device:C C_GY2
 U 1 1 5B7DCA32
 P 4300 2200
 F 0 "C_GY2" H 4325 2300 50  0000 L CNN
@@ -184,7 +150,7 @@ F 3 "" H 4300 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE2
+L Device:C C_PRE2
 U 1 1 5B7DCA39
 P 4300 1700
 F 0 "C_PRE2" H 4325 1800 50  0000 L CNN
@@ -195,7 +161,7 @@ F 3 "" H 4300 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA2
+L Device:R R_GYA2
 U 1 1 5B7DCA40
 P 4750 1950
 F 0 "R_GYA2" V 4830 1950 50  0000 C CNN
@@ -206,7 +172,7 @@ F 3 "" H 4750 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB2
+L Device:R R_GYB2
 U 1 1 5B7DCA47
 P 4300 3250
 F 0 "R_GYB2" H 4500 3300 50  0000 C CNN
@@ -244,7 +210,7 @@ Wire Wire Line
 Text Label 4300 3600 1    60   ~ 0
 GND
 $Comp
-L POT RV2
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV2
 U 1 1 5B7DCA5D
 P 4750 1050
 F 0 "RV2" H 4600 1000 50  0000 C CNN
@@ -259,7 +225,7 @@ Wire Wire Line
 Wire Wire Line
 	4300 1050 4300 1550
 $Comp
-L TL072 U_GY3
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY3
 U 1 1 5B7DD006
 P 5900 2550
 F 0 "U_GY3" H 5900 2750 50  0000 L CNN
@@ -270,7 +236,7 @@ F 3 "" H 5900 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TL072 U_GY4
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY4
 U 1 1 5B7DD00C
 P 7000 2550
 F 0 "U_GY4" H 7000 2750 50  0000 L CNN
@@ -289,7 +255,7 @@ V-
 Wire Wire Line
 	5800 2850 5800 2950
 $Comp
-L C C_GY3
+L Device:C C_GY3
 U 1 1 5B7DD016
 P 5400 2200
 F 0 "C_GY3" H 5425 2300 50  0000 L CNN
@@ -300,7 +266,7 @@ F 3 "" H 5400 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE3
+L Device:C C_PRE3
 U 1 1 5B7DD01C
 P 5400 1700
 F 0 "C_PRE3" H 5425 1800 50  0000 L CNN
@@ -311,7 +277,7 @@ F 3 "" H 5400 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA3
+L Device:R R_GYA3
 U 1 1 5B7DD022
 P 5850 1950
 F 0 "R_GYA3" V 5930 1950 50  0000 C CNN
@@ -322,7 +288,7 @@ F 3 "" H 5850 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB3
+L Device:R R_GYB3
 U 1 1 5B7DD028
 P 5400 3250
 F 0 "R_GYB3" H 5600 3300 50  0000 C CNN
@@ -360,7 +326,7 @@ Wire Wire Line
 Text Label 5400 3600 1    60   ~ 0
 GND
 $Comp
-L POT RV3
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV3
 U 1 1 5B7DD03D
 P 5850 1050
 F 0 "RV3" H 5700 1000 50  0000 C CNN
@@ -383,7 +349,7 @@ V-
 Wire Wire Line
 	6900 2850 6900 2950
 $Comp
-L C C_GY4
+L Device:C C_GY4
 U 1 1 5B7DD049
 P 6500 2200
 F 0 "C_GY4" H 6525 2300 50  0000 L CNN
@@ -394,7 +360,7 @@ F 3 "" H 6500 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE4
+L Device:C C_PRE4
 U 1 1 5B7DD04F
 P 6500 1700
 F 0 "C_PRE4" H 6525 1800 50  0000 L CNN
@@ -405,7 +371,7 @@ F 3 "" H 6500 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA4
+L Device:R R_GYA4
 U 1 1 5B7DD055
 P 6950 1950
 F 0 "R_GYA4" V 7030 1950 50  0000 C CNN
@@ -416,7 +382,7 @@ F 3 "" H 6950 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB4
+L Device:R R_GYB4
 U 1 1 5B7DD05B
 P 6500 3250
 F 0 "R_GYB4" H 6700 3300 50  0000 C CNN
@@ -454,7 +420,7 @@ Wire Wire Line
 Text Label 6500 3600 1    60   ~ 0
 GND
 $Comp
-L POT RV4
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV4
 U 1 1 5B7DD070
 P 6950 1050
 F 0 "RV4" H 6800 1000 50  0000 C CNN
@@ -469,7 +435,7 @@ Wire Wire Line
 Wire Wire Line
 	6500 1050 6500 1550
 $Comp
-L TL072 U_GY5
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY5
 U 1 1 5B7DD75B
 P 8100 2550
 F 0 "U_GY5" H 8100 2750 50  0000 L CNN
@@ -480,7 +446,7 @@ F 3 "" H 8100 2550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TL072 U_GY10
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY10
 U 1 1 5B7DD761
 P 3700 5350
 F 0 "U_GY10" H 3700 5550 50  0000 L CNN
@@ -499,7 +465,7 @@ V-
 Wire Wire Line
 	8000 2850 8000 2950
 $Comp
-L C C_GY5
+L Device:C C_GY5
 U 1 1 5B7DD76B
 P 7600 2200
 F 0 "C_GY5" H 7625 2300 50  0000 L CNN
@@ -510,7 +476,7 @@ F 3 "" H 7600 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE5
+L Device:C C_PRE5
 U 1 1 5B7DD771
 P 7600 1700
 F 0 "C_PRE5" H 7625 1800 50  0000 L CNN
@@ -521,7 +487,7 @@ F 3 "" H 7600 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA5
+L Device:R R_GYA5
 U 1 1 5B7DD777
 P 8050 1950
 F 0 "R_GYA5" V 8130 1950 50  0000 C CNN
@@ -532,7 +498,7 @@ F 3 "" H 8050 1950 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB5
+L Device:R R_GYB5
 U 1 1 5B7DD77D
 P 7600 3250
 F 0 "R_GYB5" H 7800 3300 50  0000 C CNN
@@ -570,7 +536,7 @@ Wire Wire Line
 Text Label 7600 3600 1    60   ~ 0
 GND
 $Comp
-L POT RV5
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV5
 U 1 1 5B7DD795
 P 8050 1050
 F 0 "RV5" H 7900 1000 50  0000 C CNN
@@ -593,7 +559,7 @@ V-
 Wire Wire Line
 	3600 5650 3600 5750
 $Comp
-L C C_GY10
+L Device:C C_GY10
 U 1 1 5B7DD7A1
 P 3200 5000
 F 0 "C_GY10" H 3225 5100 50  0000 L CNN
@@ -604,7 +570,7 @@ F 3 "" H 3200 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE10
+L Device:C C_PRE10
 U 1 1 5B7DD7A7
 P 3200 4500
 F 0 "C_PRE10" H 3225 4600 50  0000 L CNN
@@ -615,7 +581,7 @@ F 3 "" H 3200 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA10
+L Device:R R_GYA10
 U 1 1 5B7DD7AD
 P 3650 4750
 F 0 "R_GYA10" V 3730 4750 50  0000 C CNN
@@ -626,7 +592,7 @@ F 3 "" H 3650 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB10
+L Device:R R_GYB10
 U 1 1 5B7DD7B3
 P 3200 6050
 F 0 "R_GYB10" H 3450 6100 50  0000 C CNN
@@ -664,7 +630,7 @@ Wire Wire Line
 Text Label 3200 6400 1    60   ~ 0
 GND
 $Comp
-L POT RV10
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV10
 U 1 1 5B7DD7CB
 P 3650 4000
 F 0 "RV10" H 3500 3950 50  0000 C CNN
@@ -679,7 +645,7 @@ Wire Wire Line
 Wire Wire Line
 	3200 4000 3200 4350
 $Comp
-L TL072 UGY9
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 UGY9
 U 1 1 5B7DD7D3
 P 4800 5350
 F 0 "UGY9" H 4800 5550 50  0000 L CNN
@@ -690,7 +656,7 @@ F 3 "" H 4800 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TL072 U_GY8
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY8
 U 1 1 5B7DD7D9
 P 5900 5350
 F 0 "U_GY8" H 5900 5550 50  0000 L CNN
@@ -709,7 +675,7 @@ V-
 Wire Wire Line
 	4700 5650 4700 5750
 $Comp
-L C C_GY9
+L Device:C C_GY9
 U 1 1 5B7DD7E3
 P 4300 5000
 F 0 "C_GY9" H 4325 5100 50  0000 L CNN
@@ -720,7 +686,7 @@ F 3 "" H 4300 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE9
+L Device:C C_PRE9
 U 1 1 5B7DD7E9
 P 4300 4500
 F 0 "C_PRE9" H 4325 4600 50  0000 L CNN
@@ -731,7 +697,7 @@ F 3 "" H 4300 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA9
+L Device:R R_GYA9
 U 1 1 5B7DD7EF
 P 4750 4750
 F 0 "R_GYA9" V 4830 4750 50  0000 C CNN
@@ -742,7 +708,7 @@ F 3 "" H 4750 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB9
+L Device:R R_GYB9
 U 1 1 5B7DD7F5
 P 4300 6050
 F 0 "R_GYB9" H 4500 6100 50  0000 C CNN
@@ -780,7 +746,7 @@ Wire Wire Line
 Text Label 4300 6400 1    60   ~ 0
 GND
 $Comp
-L POT RV9
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV9
 U 1 1 5B7DD80D
 P 4750 4000
 F 0 "RV9" H 4600 3950 50  0000 C CNN
@@ -803,7 +769,7 @@ V-
 Wire Wire Line
 	5800 5650 5800 5750
 $Comp
-L C C_GY8
+L Device:C C_GY8
 U 1 1 5B7DD819
 P 5400 5000
 F 0 "C_GY8" H 5425 5100 50  0000 L CNN
@@ -814,7 +780,7 @@ F 3 "" H 5400 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE8
+L Device:C C_PRE8
 U 1 1 5B7DD81F
 P 5400 4500
 F 0 "C_PRE8" H 5425 4600 50  0000 L CNN
@@ -825,7 +791,7 @@ F 3 "" H 5400 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA8
+L Device:R R_GYA8
 U 1 1 5B7DD825
 P 5850 4750
 F 0 "R_GYA8" V 5930 4750 50  0000 C CNN
@@ -836,7 +802,7 @@ F 3 "" H 5850 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB8
+L Device:R R_GYB8
 U 1 1 5B7DD82B
 P 5400 6050
 F 0 "R_GYB8" H 5600 6100 50  0000 C CNN
@@ -874,7 +840,7 @@ Wire Wire Line
 Text Label 5400 6400 1    60   ~ 0
 GND
 $Comp
-L POT RV8
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV8
 U 1 1 5B7DD843
 P 5850 4000
 F 0 "RV8" H 5700 3950 50  0000 C CNN
@@ -889,7 +855,7 @@ Wire Wire Line
 Wire Wire Line
 	5400 4000 5400 4350
 $Comp
-L TL072 U_GY7
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY7
 U 1 1 5B7DDAAF
 P 7000 5350
 F 0 "U_GY7" H 7000 5550 50  0000 L CNN
@@ -900,7 +866,7 @@ F 3 "" H 7000 5350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L TL072 U_GY6
+L 1U_TenOctaveGraphicEQ_THT-rescue:TL072 U_GY6
 U 1 1 5B7DDAB5
 P 8100 5350
 F 0 "U_GY6" H 8100 5550 50  0000 L CNN
@@ -919,7 +885,7 @@ V-
 Wire Wire Line
 	6900 5650 6900 5750
 $Comp
-L C C_GY7
+L Device:C C_GY7
 U 1 1 5B7DDABF
 P 6500 5000
 F 0 "C_GY7" H 6525 5100 50  0000 L CNN
@@ -930,7 +896,7 @@ F 3 "" H 6500 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE7
+L Device:C C_PRE7
 U 1 1 5B7DDAC5
 P 6500 4500
 F 0 "C_PRE7" H 6525 4600 50  0000 L CNN
@@ -941,7 +907,7 @@ F 3 "" H 6500 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA7
+L Device:R R_GYA7
 U 1 1 5B7DDACB
 P 6950 4750
 F 0 "R_GYA7" V 7030 4750 50  0000 C CNN
@@ -952,7 +918,7 @@ F 3 "" H 6950 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB7
+L Device:R R_GYB7
 U 1 1 5B7DDAD1
 P 6500 6050
 F 0 "R_GYB7" H 6700 6100 50  0000 C CNN
@@ -990,7 +956,7 @@ Wire Wire Line
 Text Label 6500 6400 1    60   ~ 0
 GND
 $Comp
-L POT RV7
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV7
 U 1 1 5B7DDAE9
 P 6950 4000
 F 0 "RV7" H 6800 3950 50  0000 C CNN
@@ -1013,7 +979,7 @@ V-
 Wire Wire Line
 	8000 5650 8000 5750
 $Comp
-L C C_GY6
+L Device:C C_GY6
 U 1 1 5B7DDAF5
 P 7600 5000
 F 0 "C_GY6" H 7625 5100 50  0000 L CNN
@@ -1024,7 +990,7 @@ F 3 "" H 7600 5000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C_PRE6
+L Device:C C_PRE6
 U 1 1 5B7DDAFB
 P 7600 4500
 F 0 "C_PRE6" H 7625 4600 50  0000 L CNN
@@ -1035,7 +1001,7 @@ F 3 "" H 7600 4500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R_GYA6
+L Device:R R_GYA6
 U 1 1 5B7DDB01
 P 8050 4750
 F 0 "R_GYA6" V 8130 4750 50  0000 C CNN
@@ -1046,7 +1012,7 @@ F 3 "" H 8050 4750 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L R R_GYB6
+L Device:R R_GYB6
 U 1 1 5B7DDB07
 P 7600 6050
 F 0 "R_GYB6" H 7800 6100 50  0000 C CNN
@@ -1084,7 +1050,7 @@ Wire Wire Line
 Text Label 7600 6400 1    60   ~ 0
 GND
 $Comp
-L POT RV6
+L 1U_TenOctaveGraphicEQ_THT-rescue:POT RV6
 U 1 1 5B7DDB1F
 P 8050 4000
 F 0 "RV6" H 7900 3950 50  0000 C CNN
@@ -1173,7 +1139,7 @@ EQ_OUT
 Text HLabel 1800 1300 0    60   Input ~ 0
 EQ_IN
 $Comp
-L C C_PREA1
+L Device:C C_PREA1
 U 1 1 5B820882
 P 2800 1700
 F 0 "C_PREA1" H 2825 1800 50  0000 L CNN

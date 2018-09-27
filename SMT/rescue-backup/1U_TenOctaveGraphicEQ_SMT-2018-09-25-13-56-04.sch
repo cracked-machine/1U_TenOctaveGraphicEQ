@@ -1,6 +1,40 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:switches
+LIBS:relays
+LIBS:motors
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:_tc7662b
+LIBS:socket_custom
 LIBS:1U_TenOctaveGraphicEQ_SMT-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,23 +49,45 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L _tc7662b:_TC7662B U_CP1
+L TL072 U1
+U 1 1 5B7D85F7
+P 3400 2000
+F 0 "U1" H 3400 2200 50  0000 L CNN
+F 1 "TL072" H 3400 1800 50  0000 L CNN
+F 2 "" H 3400 2000 50  0001 C CNN
+F 3 "" H 3400 2000 50  0001 C CNN
+	1    3400 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TL072 U1
+U 2 1 5B7D865D
+P 7100 2100
+F 0 "U1" H 7100 2300 50  0000 L CNN
+F 1 "TL072" H 7100 1900 50  0000 L CNN
+F 2 "" H 7100 2100 50  0001 C CNN
+F 3 "" H 7100 2100 50  0001 C CNN
+	2    7100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L _TC7662B U_CP1
 U 1 1 5B7D8912
 P 4850 6125
 F 0 "U_CP1" H 4850 6575 60  0000 C CNN
 F 1 "_TC7662B" H 4825 6475 60  0000 C CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 4850 6125 60  0001 C CNN
+F 2 "" H 4850 6125 60  0001 C CNN
 F 3 "" H 4850 6125 60  0001 C CNN
 	1    4850 6125
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP C_CP1
+L CP C_CP1
 U 1 1 5B7D8B68
 P 3700 6200
 F 0 "C_CP1" H 3725 6300 50  0000 L CNN
 F 1 "10uF" H 3725 6100 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 3738 6050 50  0001 C CNN
+F 2 "" H 3738 6050 50  0001 C CNN
 F 3 "" H 3700 6200 50  0001 C CNN
 	1    3700 6200
 	1    0    0    -1  
@@ -39,12 +95,12 @@ $EndComp
 Text Label 4100 6900 1    60   ~ 0
 GND
 $Comp
-L Device:CP C_CP2
+L CP C_CP2
 U 1 1 5B7D8D9C
 P 5600 6550
 F 0 "C_CP2" H 5625 6650 50  0000 L CNN
 F 1 "10uF" H 5625 6450 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 5638 6400 50  0001 C CNN
+F 2 "" H 5638 6400 50  0001 C CNN
 F 3 "" H 5600 6550 50  0001 C CNN
 	1    5600 6550
 	-1   0    0    1   
@@ -52,12 +108,12 @@ $EndComp
 Text Label 5600 6900 1    60   ~ 0
 GND
 $Comp
-L 1U_TenOctaveGraphicEQ_SMT-rescue:Barrel_Jack J_PS2
+L Barrel_Jack J_PS2
 U 1 1 5B7D90AC
 P 2250 5650
 F 0 "J_PS2" H 2250 5860 50  0000 C CNN
 F 1 "Barrel_Jack" H 2250 5475 50  0000 C CNN
-F 2 "WurthDCBarrelSocketVertical_5:Wurth Elektronik Through Hole DC Power Socket WR-DC Series, 5.5mm Vertical 3A" H 2300 5610 50  0001 C CNN
+F 2 "" H 2300 5610 50  0001 C CNN
 F 3 "" H 2300 5610 50  0001 C CNN
 	1    2250 5650
 	1    0    0    -1  
@@ -79,23 +135,34 @@ V+
 Text Label 7000 2500 0    60   ~ 0
 V-
 $Comp
-L Device:R R_GAIN1
+L JACK__MONO_2P_NC J_IN1
+U 1 1 5B7D9778
+P 1150 2100
+F 0 "J_IN1" H 800 1900 50  0000 C CNN
+F 1 "JACK__MONO_2P_NC" H 1150 2450 50  0000 C CNN
+F 2 "" H 1150 2100 50  0001 C CNN
+F 3 "" H 1150 2100 50  0001 C CNN
+	1    1150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R_GAIN1
 U 1 1 5B7D98A3
 P 4150 2000
 F 0 "R_GAIN1" V 4050 2000 50  0000 C CNN
 F 1 "2K7" V 4150 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4080 2000 50  0001 C CNN
+F 2 "" V 4080 2000 50  0001 C CNN
 F 3 "" H 4150 2000 50  0001 C CNN
 	1    4150 2000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C_RF2
+L C C_RF2
 U 1 1 5B7D9903
 P 4400 2250
 F 0 "C_RF2" H 4050 2250 50  0000 L CNN
 F 1 "100pF" H 4050 2150 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4438 2100 50  0001 C CNN
+F 2 "" H 4438 2100 50  0001 C CNN
 F 3 "" H 4400 2250 50  0001 C CNN
 	1    4400 2250
 	1    0    0    -1  
@@ -103,34 +170,34 @@ $EndComp
 Text Label 4400 2800 1    60   ~ 0
 GND
 $Comp
-L Device:R R_BUFOUT1
+L R R_BUFOUT1
 U 1 1 5B7D9AF3
 P 7150 2800
 F 0 "R_BUFOUT1" V 7230 2800 50  0000 C CNN
 F 1 "2K7" V 7150 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7080 2800 50  0001 C CNN
+F 2 "" V 7080 2800 50  0001 C CNN
 F 3 "" H 7150 2800 50  0001 C CNN
 	1    7150 2800
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C_BUFOUT1
+L C C_BUFOUT1
 U 1 1 5B7D9B3C
 P 7150 3100
 F 0 "C_BUFOUT1" V 7300 2950 50  0000 L CNN
 F 1 "100uF" V 7400 3000 50  0000 L CNN
-F 2 "Capacitor_SMD:CP_Elec_4x5.4" H 7188 2950 50  0001 C CNN
+F 2 "" H 7188 2950 50  0001 C CNN
 F 3 "" H 7150 3100 50  0001 C CNN
 	1    7150 3100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R_BEAD1
+L R R_BEAD1
 U 1 1 5B7E3285
 P 4750 2000
 F 0 "R_BEAD1" V 4650 2000 50  0000 C CNN
 F 1 "10R" V 4750 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 4680 2000 50  0001 C CNN
+F 2 "" V 4680 2000 50  0001 C CNN
 F 3 "" H 4750 2000 50  0001 C CNN
 	1    4750 2000
 	0    1    1    0   
@@ -147,23 +214,23 @@ F5 "EQ_V+" I L 5050 2500 60
 F6 "EQ_V-" I L 5050 2700 60 
 $EndSheet
 $Comp
-L Device:R R_BEAD2
+L R R_BEAD2
 U 1 1 5B7E1DBD
 P 6500 2000
 F 0 "R_BEAD2" V 6400 2000 50  0000 C CNN
 F 1 "10R" V 6500 2000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 6430 2000 50  0001 C CNN
+F 2 "" V 6430 2000 50  0001 C CNN
 F 3 "" H 6500 2000 50  0001 C CNN
 	1    6500 2000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R_PD2
+L R R_PD2
 U 1 1 5B7E2BD1
 P 8950 2450
 F 0 "R_PD2" H 8750 2500 50  0000 C CNN
 F 1 "1M" H 8700 2400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 8880 2450 50  0001 C CNN
+F 2 "" V 8880 2450 50  0001 C CNN
 F 3 "" H 8950 2450 50  0001 C CNN
 	1    8950 2450
 	1    0    0    -1  
@@ -171,12 +238,12 @@ $EndComp
 Text Label 8950 2800 1    60   ~ 0
 GND
 $Comp
-L Device:C C_RF3
+L C C_RF3
 U 1 1 5B7E2D17
 P 9200 2450
 F 0 "C_RF3" H 9350 2500 50  0000 L CNN
 F 1 "1nF" H 9350 2400 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 9238 2300 50  0001 C CNN
+F 2 "" H 9238 2300 50  0001 C CNN
 F 3 "" H 9200 2450 50  0001 C CNN
 	1    9200 2450
 	1    0    0    -1  
@@ -184,56 +251,56 @@ $EndComp
 Text Label 9200 2800 1    60   ~ 0
 GND
 $Comp
-L Device:C C_DC3
+L C C_DC3
 U 1 1 5B7EAEC6
 P 8400 2200
 F 0 "C_DC3" V 8550 2050 50  0000 L CNN
 F 1 "1uF" V 8650 2100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8438 2050 50  0001 C CNN
+F 2 "" H 8438 2050 50  0001 C CNN
 F 3 "" H 8400 2200 50  0001 C CNN
 	1    8400 2200
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C_DC2
+L C C_DC2
 U 1 1 5B7EAF31
 P 8400 2000
 F 0 "C_DC2" V 8150 1900 50  0000 L CNN
 F 1 "1uF" V 8250 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 8438 1850 50  0001 C CNN
+F 2 "" H 8438 1850 50  0001 C CNN
 F 3 "" H 8400 2000 50  0001 C CNN
 	1    8400 2000
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R_RF2
+L R R_RF2
 U 1 1 5B7EDED1
 P 7850 2100
 F 0 "R_RF2" V 7750 2100 50  0000 C CNN
 F 1 "470R" V 7850 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 7780 2100 50  0001 C CNN
+F 2 "" V 7780 2100 50  0001 C CNN
 F 3 "" H 7850 2100 50  0001 C CNN
 	1    7850 2100
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:C C_DC1
+L C C_DC1
 U 1 1 5B7EE405
 P 1850 1900
 F 0 "C_DC1" V 1600 1800 50  0000 L CNN
 F 1 "470nF" V 1700 1800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 1888 1750 50  0001 C CNN
+F 2 "" H 1888 1750 50  0001 C CNN
 F 3 "" H 1850 1900 50  0001 C CNN
 	1    1850 1900
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R_PD1
+L R R_PD1
 U 1 1 5B7EE66B
 P 2100 2150
 F 0 "R_PD1" H 1950 2200 50  0000 C CNN
 F 1 "100K" H 1950 2100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2030 2150 50  0001 C CNN
+F 2 "" V 2030 2150 50  0001 C CNN
 F 3 "" H 2100 2150 50  0001 C CNN
 	1    2100 2150
 	1    0    0    -1  
@@ -241,23 +308,23 @@ $EndComp
 Text Label 2100 2800 1    60   ~ 0
 GND
 $Comp
-L Device:R R_RF1
+L R R_RF1
 U 1 1 5B7EE9C9
 P 2350 1900
 F 0 "R_RF1" V 2600 1900 50  0000 C CNN
 F 1 "1K" V 2500 1900 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 2280 1900 50  0001 C CNN
+F 2 "" V 2280 1900 50  0001 C CNN
 F 3 "" H 2350 1900 50  0001 C CNN
 	1    2350 1900
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Device:C C_RF1
+L C C_RF1
 U 1 1 5B7EEA2C
 P 2600 2150
 F 0 "C_RF1" H 2700 2200 50  0000 L CNN
 F 1 "100pF" H 2700 2100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 2638 2000 50  0001 C CNN
+F 2 "" H 2638 2000 50  0001 C CNN
 F 3 "" H 2600 2150 50  0001 C CNN
 	1    2600 2150
 	1    0    0    -1  
@@ -268,43 +335,54 @@ Text Notes 2350 1550 0    60   ~ 0
 Reduce \n600KHz RF \n
 Text Notes 4050 1550 0    60   ~ 0
 Reduce\n20MHz RF
-NoConn ~ 10000 2000
+$Comp
+L JACK__MONO_2P_NC J_OUT1
+U 1 1 5B7F20A8
+P 10300 2300
+F 0 "J_OUT1" H 9950 2100 50  0000 C CNN
+F 1 "JACK__MONO_2P_NC" H 10300 2650 50  0000 C CNN
+F 2 "" H 10300 2300 50  0001 C CNN
+F 3 "" H 10300 2300 50  0001 C CNN
+	1    10300 2300
+	-1   0    0    -1  
+$EndComp
+NoConn ~ 9850 2200
 Text Label 9700 2800 1    60   ~ 0
 GND
-NoConn ~ 1400 1800
-Text Label 1650 2700 1    60   ~ 0
+NoConn ~ 1600 2000
+Text Label 1750 2800 1    60   ~ 0
 GND
 Text Notes 7950 1650 0    60   ~ 0
 Reduce\n10MHz RF
 $Comp
-L 1U_TenOctaveGraphicEQ_SMT-rescue:Conn_02x05_Odd_Even J_PS1
+L Conn_02x05_Odd_Even J_PS1
 U 1 1 5B810FBD
 P 2300 4600
 F 0 "J_PS1" H 2350 4900 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 2350 4300 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 2300 4600 50  0001 C CNN
+F 2 "" H 2300 4600 50  0001 C CNN
 F 3 "" H 2300 4600 50  0001 C CNN
 	1    2300 4600
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C_BP1
+L C C_BP1
 U 1 1 5B811451
 P 3050 4350
 F 0 "C_BP1" H 2750 4450 50  0000 L CNN
 F 1 "100nF" H 2750 4250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3088 4200 50  0001 C CNN
+F 2 "" H 3088 4200 50  0001 C CNN
 F 3 "" H 3050 4350 50  0001 C CNN
 	1    3050 4350
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Device:C C_BP2
+L C C_BP2
 U 1 1 5B811558
 P 3050 4850
 F 0 "C_BP2" H 2750 4950 50  0000 L CNN
 F 1 "100nF" H 2750 4750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 3088 4700 50  0001 C CNN
+F 2 "" H 3088 4700 50  0001 C CNN
 F 3 "" H 3050 4850 50  0001 C CNN
 	1    3050 4850
 	-1   0    0    -1  
@@ -315,31 +393,34 @@ Text Label 6300 5050 2    60   ~ 0
 PS_V-
 NoConn ~ 2500 4500
 NoConn ~ 2500 4700
+NoConn ~ 2000 4400
 NoConn ~ 2000 4500
+NoConn ~ 2000 4600
 NoConn ~ 2000 4700
+NoConn ~ 2000 4800
 Text Label 3600 4600 2    60   ~ 0
 EURO_GND
-Text Notes 600  4650 0    60   ~ 0
+Text Notes 750  4650 0    60   ~ 0
 Eurorack Power\nSupply Connector
 Text Notes 650  5700 0    60   ~ 0
 12VDC Barrel Connector\nCenter Positive
 $Comp
-L 1U_TenOctaveGraphicEQ_SMT-rescue:Conn_02x04_Odd_Even J_PWRSEL1
+L Conn_02x04_Odd_Even J_PWRSEL1
 U 1 1 5B8158AB
-P 7100 5350
-F 0 "J_PWRSEL1" H 7150 5550 50  0000 C CNN
-F 1 "Conn_02x04_Odd_Even" H 7150 5050 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 7100 5350 50  0001 C CNN
-F 3 "" H 7100 5350 50  0001 C CNN
-	1    7100 5350
-	1    0    0    1   
+P 7100 5250
+F 0 "J_PWRSEL1" H 7150 5450 50  0000 C CNN
+F 1 "Conn_02x04_Odd_Even" H 7150 4950 50  0000 C CNN
+F 2 "" H 7100 5250 50  0001 C CNN
+F 3 "" H 7100 5250 50  0001 C CNN
+	1    7100 5250
+	1    0    0    -1  
 $EndComp
 Text Label 8350 4850 0    60   ~ 0
 V+
 Text Label 8350 5750 0    60   ~ 0
 V-
 Text Notes 6800 4750 0    60   ~ 0
-PCB Should be clearly marked as follows:\n\nSELECT ONLY ONE PAIR. Euro OR DCJack\nDO *NOT* CONNECT ALL FOUR!\n1->2 = Euro V+\n3->4 = Euro V-\n5->6 = DCJack V+\n7->8 = DCJack V-
+PCB Should be clearly marked as follows:\n\nSELECT ONLY ONE PAIR. Euro OR DCJack\nDO *NOT* CONNECT ALL FOUR!\n1->2 = Euro V+\n3->4 = DCJack V+\n5->6 = Euro V-\n7->8 = DCJack V-
 Wire Wire Line
 	3700 6050 4350 6050
 Wire Wire Line
@@ -353,13 +434,13 @@ Wire Wire Line
 Wire Wire Line
 	4200 5900 4200 5550
 Wire Wire Line
-	2550 5550 2750 5550
+	2550 5550 6450 5550
 Wire Wire Line
 	5500 5550 5500 5900
 Wire Wire Line
 	5500 5900 5350 5900
 Wire Wire Line
-	5350 6350 5600 6350
+	5350 6350 6550 6350
 Wire Wire Line
 	5600 6350 5600 6400
 Wire Wire Line
@@ -388,10 +469,10 @@ Wire Wire Line
 Wire Wire Line
 	3750 2600 3750 2000
 Wire Wire Line
-	3700 2000 3750 2000
+	3700 2000 4000 2000
 Connection ~ 3750 2000
 Wire Wire Line
-	4300 2000 4400 2000
+	4300 2000 4600 2000
 Wire Wire Line
 	4400 2000 4400 2100
 Wire Wire Line
@@ -399,13 +480,13 @@ Wire Wire Line
 Wire Wire Line
 	7000 2800 6700 2800
 Wire Wire Line
-	6700 2200 6700 2800
+	6700 2200 6700 3100
 Wire Wire Line
 	6700 2200 6800 2200
 Wire Wire Line
 	7300 2800 7500 2800
 Wire Wire Line
-	7500 2100 7500 2800
+	7500 2100 7500 3100
 Wire Wire Line
 	6700 3100 7000 3100
 Connection ~ 6700 2800
@@ -428,7 +509,7 @@ Connection ~ 9200 2100
 Wire Wire Line
 	9200 2600 9200 2800
 Wire Wire Line
-	8200 2000 8200 2100
+	8200 2000 8200 2200
 Wire Wire Line
 	8200 2000 8250 2000
 Connection ~ 8200 2100
@@ -437,50 +518,60 @@ Wire Wire Line
 Wire Wire Line
 	8600 2200 8550 2200
 Wire Wire Line
-	8600 2000 8600 2100
+	8600 2000 8600 2200
 Connection ~ 8600 2100
 Wire Wire Line
 	8600 2000 8550 2000
 Wire Wire Line
-	8600 2100 8950 2100
+	8600 2100 9850 2100
 Wire Wire Line
 	6650 2000 6800 2000
 Wire Wire Line
 	8000 2100 8200 2100
 Wire Wire Line
-	7400 2100 7500 2100
+	7400 2100 7700 2100
 Connection ~ 7500 2100
 Wire Wire Line
-	1400 1900 1700 1900
+	1600 1900 1700 1900
 Wire Wire Line
-	2000 1900 2100 1900
+	2000 1900 2200 1900
 Wire Wire Line
 	2100 1900 2100 2000
 Wire Wire Line
 	2100 2300 2100 2800
 Connection ~ 2100 1900
 Wire Wire Line
-	2500 1900 2600 1900
+	2500 1900 3100 1900
 Wire Wire Line
 	2600 1900 2600 2000
 Wire Wire Line
 	2600 2300 2600 2800
 Connection ~ 2600 1900
 Wire Wire Line
-	10000 2200 9700 2200
+	9850 2300 9700 2300
 Wire Wire Line
-	1400 2000 1650 2000
+	9700 2300 9700 2800
 Wire Wire Line
-	2500 4600 3050 4600
+	9850 2400 9700 2400
+Connection ~ 9700 2400
 Wire Wire Line
-	3050 4500 3050 4600
+	1600 2100 1750 2100
+Wire Wire Line
+	1750 2100 1750 2800
+Wire Wire Line
+	1600 2200 1750 2200
+Connection ~ 1750 2200
+Wire Wire Line
+	2500 4600 3600 4600
+Wire Wire Line
+	3050 4500 3050 4700
 Connection ~ 3050 4600
 Wire Wire Line
 	2500 4800 2850 4800
 Wire Wire Line
 	2850 4800 2850 5050
 Wire Wire Line
-	2850 5050 3050 5050
+	2850 5050 6550 5050
 Wire Wire Line
 	3050 5000 3050 5050
 Connection ~ 3050 5050
@@ -489,36 +580,50 @@ Wire Wire Line
 Wire Wire Line
 	2850 4400 2850 4150
 Wire Wire Line
-	2850 4150 3050 4150
+	2850 4150 6450 4150
 Wire Wire Line
 	3050 4200 3050 4150
 Connection ~ 3050 4150
 Wire Wire Line
 	3600 4600 3600 5650
 Wire Wire Line
+	3600 5650 2550 5650
+Wire Wire Line
 	6550 6350 6550 5450
 Wire Wire Line
 	6550 5450 6900 5450
 Wire Wire Line
-	6350 5050 6350 5250
+	6550 5050 6550 5350
 Wire Wire Line
-	6350 5550 6350 5350
+	6450 5550 6450 5250
 Wire Wire Line
 	6450 4150 6450 5150
 Wire Wire Line
 	6450 5150 6900 5150
 Wire Wire Line
-	8350 4850 8350 5150
+	8350 5250 7400 5250
 Wire Wire Line
-	7400 5150 7900 5150
+	8350 4850 8350 5250
 Wire Wire Line
-	7400 5450 7900 5450
+	7400 5150 8350 5150
+Connection ~ 8350 5150
+Wire Wire Line
+	7400 5350 8350 5350
+Wire Wire Line
+	8350 5350 8350 5750
+Wire Wire Line
+	7400 5450 8350 5450
+Connection ~ 8350 5450
+Wire Wire Line
+	6550 5350 6900 5350
+Wire Wire Line
+	6450 5250 6900 5250
 Wire Wire Line
 	4700 2900 5050 2900
 Text Label 4700 2900 0    60   ~ 0
 GND
 $Comp
-L power:PWR_FLAG #FLG01
+L PWR_FLAG #FLG01
 U 1 1 5B82ED4E
 P 7900 5100
 F 0 "#FLG01" H 7900 5175 50  0001 C CNN
@@ -532,7 +637,7 @@ Wire Wire Line
 	7900 5100 7900 5150
 Connection ~ 7900 5150
 $Comp
-L power:PWR_FLAG #FLG02
+L PWR_FLAG #FLG02
 U 1 1 5B830892
 P 7900 5500
 F 0 "#FLG02" H 7900 5575 50  0001 C CNN
@@ -554,7 +659,7 @@ V+
 Text Label 4700 2700 0    60   ~ 0
 V-
 $Comp
-L power:PWR_FLAG #FLG03
+L PWR_FLAG #FLG03
 U 1 1 5B836607
 P 2750 5500
 F 0 "#FLG03" H 2750 5575 50  0001 C CNN
@@ -567,132 +672,4 @@ $EndComp
 Wire Wire Line
 	2750 5500 2750 5550
 Connection ~ 2750 5550
-Wire Wire Line
-	4200 5550 5500 5550
-Wire Wire Line
-	5500 5550 6350 5550
-Wire Wire Line
-	5600 6350 6550 6350
-Wire Wire Line
-	3750 2000 4000 2000
-Wire Wire Line
-	6700 2800 6700 3100
-Wire Wire Line
-	7500 2800 7500 3100
-Wire Wire Line
-	4400 2000 4600 2000
-Wire Wire Line
-	8950 2100 9200 2100
-Wire Wire Line
-	9200 2100 10000 2100
-Wire Wire Line
-	8200 2100 8200 2200
-Wire Wire Line
-	8600 2100 8600 2200
-Wire Wire Line
-	7500 2100 7700 2100
-Wire Wire Line
-	2100 1900 2200 1900
-Wire Wire Line
-	2600 1900 3100 1900
-Wire Wire Line
-	3050 4600 3600 4600
-Wire Wire Line
-	3050 4600 3050 4700
-Wire Wire Line
-	3050 5050 6350 5050
-Wire Wire Line
-	3050 4150 6450 4150
-Wire Wire Line
-	8350 5450 8350 5750
-Wire Wire Line
-	7900 5150 8350 5150
-Wire Wire Line
-	7900 5450 8350 5450
-Wire Wire Line
-	2750 5550 4200 5550
-$Comp
-L Connector:AudioJack2_Ground_Switch J_IN1
-U 1 1 5BB032DC
-P 1200 1900
-F 0 "J_IN1" H 968 1879 50  0000 R CNN
-F 1 "AudioJack2_Ground_Switch" H 968 1970 50  0000 R CNN
-F 2 "Switchcraft_Jacks:112APCX" H 1200 1900 50  0001 C CNN
-F 3 "~" H 1200 1900 50  0001 C CNN
-	1    1200 1900
-	1    0    0    1   
-$EndComp
-Wire Wire Line
-	1650 2000 1650 2700
-$Comp
-L Connector:AudioJack2_Ground_Switch J_OUT1
-U 1 1 5BB27080
-P 10200 2100
-F 0 "J_OUT1" H 9967 2079 50  0000 R CNN
-F 1 "AudioJack2_Ground_Switch" H 9967 2170 50  0000 R CNN
-F 2 "Switchcraft_Jacks:112APCX" H 10200 2100 50  0001 C CNN
-F 3 "~" H 10200 2100 50  0001 C CNN
-	1    10200 2100
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	9700 2200 9700 2800
-$Comp
-L Amplifier_Operational:TL071 U_IN1
-U 1 1 5BB46052
-P 3400 2000
-F 0 "U_IN1" H 3400 2350 50  0000 L CNN
-F 1 "TL071" H 3400 2250 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 3450 2050 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 3550 2150 50  0001 C CNN
-	1    3400 2000
-	1    0    0    -1  
-$EndComp
-$Comp
-L Amplifier_Operational:TL071 U_OUT1
-U 1 1 5BB460D5
-P 7100 2100
-F 0 "U_OUT1" H 7100 2450 50  0000 L CNN
-F 1 "TL071" H 7100 2350 50  0000 L CNN
-F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7150 2150 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/tl071.pdf" H 7250 2250 50  0001 C CNN
-	1    7100 2100
-	1    0    0    -1  
-$EndComp
-NoConn ~ 7100 2400
-NoConn ~ 7200 2400
-NoConn ~ 3400 2300
-NoConn ~ 3500 2300
-Wire Wire Line
-	2000 4600 1550 4600
-Text Label 1550 4600 0    50   ~ 0
-EURO_GND
-Text Label 1550 4400 0    60   ~ 0
-PS_V+
-Text Label 1550 4800 0    60   ~ 0
-PS_V-
-Wire Wire Line
-	2000 4400 1550 4400
-Wire Wire Line
-	2000 4800 1550 4800
-Wire Wire Line
-	3600 5650 2550 5650
-Connection ~ 8350 5450
-Wire Wire Line
-	8350 5350 8350 5450
-Wire Wire Line
-	7400 5350 8350 5350
-Connection ~ 8350 5150
-Wire Wire Line
-	8350 5150 8350 5250
-Wire Wire Line
-	8350 5250 7400 5250
-Wire Wire Line
-	6350 5250 6650 5350
-Wire Wire Line
-	6650 5350 6900 5350
-Wire Wire Line
-	6350 5350 6650 5250
-Wire Wire Line
-	6650 5250 6900 5250
 $EndSCHEMATC

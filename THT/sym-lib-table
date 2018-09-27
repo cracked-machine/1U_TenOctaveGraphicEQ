@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name 1U_TenOctaveGraphicEQ_THT-rescue)(type Legacy)(uri ${KIPRJMOD}/1U_TenOctaveGraphicEQ_THT-rescue.lib)(options "")(descr ""))
+  (lib (name _tc7662b)(type Legacy)(uri ${KIPRJMOD}/lib/_tc7662b.lib)(options "")(descr ""))
+  (lib (name socket_custom)(type Legacy)(uri ${KIPRJMOD}/lib/socket_custom.lib)(options "")(descr ""))
+)

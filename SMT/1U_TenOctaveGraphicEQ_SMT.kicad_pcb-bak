@@ -3421,7 +3421,7 @@
   (module Switchcraft_Jacks:112APCX (layer F.Cu) (tedit 5BAC3536) (tstamp 5C50C6F4)
     (at 450.215 89.281)
     (path /5BB27080)
-    (fp_text reference J_OUT1 (at -8.509 -6.731 90) (layer F.SilkS)
+    (fp_text reference J_OUT1 (at -5.842 -8.636) (layer F.SilkS)
       (effects (font (size 0.4 0.4) (thickness 0.015)))
     )
     (fp_text value AudioJack2_Ground_Switch (at 0 -9.4488) (layer F.Fab)

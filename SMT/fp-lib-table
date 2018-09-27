@@ -1,0 +1,6 @@
+(fp_lib_table
+  (lib (name ThonkiConn_3)(type KiCad)(uri ${KIPRJMOD}/lib/ThonkiConn_3.pretty)(options "")(descr ""))
+  (lib (name WurthDCBarrelSocketVertical_5)(type KiCad)(uri ${KIPRJMOD}/lib/WurthDCBarrelSocketVertical_5.pretty)(options "")(descr ""))
+  (lib (name Bourn_PTA_Slider)(type KiCad)(uri ${KIPRJMOD}/lib/Bourn_PTA_Slider.pretty)(options "")(descr ""))
+  (lib (name Switchcraft_Jacks)(type KiCad)(uri ${KIPRJMOD}/lib/Switchcraft_Jacks.pretty)(options "")(descr ""))
+)
